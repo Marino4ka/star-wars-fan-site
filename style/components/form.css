@@ -1,0 +1,29 @@
+.form {
+	width: 100%;
+	padding: 15px 25px;
+}
+
+	.form__field {
+		width: 100%;
+		border: 1px solid #ddd;
+		border-radius: 5px;
+		margin-bottom: 15px;
+	}
+
+	.form__field:last-child {
+		width: 30%;
+		border: none;
+		margin: 0 auto;
+	}
+
+	/*.form__child:nth-child(2) {
+	}*/
+
+	/*.form__child:nth-child(even) {
+	}*/
+
+	/*.form__child:nth-child(odd) {
+	}*/
+
+
+

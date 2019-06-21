@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Super Puper Website</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style/all.css">
+</head>
+<body>
+
+	<section class="modal" id="modal">
+		<div class="modal__backdrop" onclick="showModal(false)"></div>
+		<div class="modal__window">
+			<div class="modal__top">
+				<div class="modal__title">Consultation</div>
+				<div class="modal__img" onclick="showModal(false)">
+					<img src="images/widgets/close.svg">
+				</div>
+			</div>
+			<form class="form">
+				<fieldset class="form__field">
+					<input type="text" class="input input_field"
+					placeholder="Enter your name">
+				</fieldset>
+				<fieldset class="form__field">
+					<input type="text" class="input input_field">
+				</fieldset>
+				<fieldset class="form__field">
+					<button class="btn btn_form">Submit</button>
+				</fieldset>
+			</form>
+		</div>	
+	</section>
+
+	<section class="aside" id="aside">
+		<div class="aside-inner">
+			<div class="aside-logo"><img src="images/widgets/logo-blue.svg"></div>
+			<div class="aside-list">
+				<li class="aside-list__item">Home</li>
+				<li class="aside-list__item">Home</li>
+				<li class="aside-list__item">Home</li>
+				<li class="aside-list__item">Home</li>
+				<li class="aside-list__item">Home</li>
+			</div>
+			<button class="aside-button">Enroll</button>
+		</div>
+	</section>
+	<section class="aside-backdrop" id="aside-backdrop" onclick="toggleAside('hide')"></section>
+
+	<header class="header header_sizeM">
+		<img class="header__menu" src="images/widgets/menu.svg" onclick="toggleAside('show')"> 
+		<div class="header__logo">
+			<img src="images/widgets/logo-blue.svg">
+		</div>
+		<div class="nav_header">
+			<div class="nav__link link_props" onclick="scrollToDiv('main')">
+				Home
+			</div>
+				
+			<div class="nav__link link_props" onclick="scrollToDiv('service')">
+				Service
+			</div>
+				
+			<div class="nav__link link_props" onclick="scrollToDiv('portfolio')">
+				Portfolio
+			</div>
+				
+			<div class="nav__link link_props" onclick="scrollToDiv('join')">
+				About
+			</div>
+					
+			<div class="nav__link link_props" onclick="scrollToDiv('contact')">
+				Contact
+			</div>
+				
+		</div>
+		<div class="header__enroll">
+			<button class="btn btn_enroll" onclick="showModal(true)">Enroll</button>
+		</div>
+	</header>
+
+	<section class="main" id="main">
+		<div class="slider-arrow slider-arrow_left"
+			onclick="goBack();">
+			<img src="images/widgets/arrow.svg">
+		</div>
+		<div class="slider-arrow slider-arrow_right"
+			onclick="goNext();">
+			<img src="images/widgets/arrow.svg">
+
+		</div>
+		<div class="slider" id="slider">
+			<div class="slider__slide">
+				<div class="bg-opacity"></div>
+				<div class="main__text main__text_title">Star Wars</div>
+				<div class="main__text main__text_subtitle">The Last jedi</div>
+			</div>
+			<div class="slider__slide slider__slide_2">
+				<div class="bg-opacity"></div>
+				<div class="main__text main__text_title">Marina</div>
+				<div class="main__text main__text_subtitle">The First</div>
+			</div>
+			<div class="slider__slide slider__slide_3">
+				<div class="bg-opacity"></div>
+				<div class="main__text main__text_title">Anton</div>
+				<div class="main__text main__text_subtitle">XOXOXOXO</div>
+			</div>
+		</div>
+	</section>
+	
+	<section class="service" id="service">
+		<section class="page-title">
+			<div class="page-title__picture">
+				<img src="images/widgets/logo-blue.svg">
+			</div>
+			<div class="page-title__text">
+				<div class="page-title__text_title">We are good at</div>
+				<div class="page-title__text_subtitle">Some of thease stuff under</div>
+			</div>
+			<div class="page-title__line"></div>
+		</section>	
+		<div class="service__grid">
+			<div class="service__item">
+				<div class="service__assorti">
+					<div class="service__number">1</div>
+					<div class="service__img">
+						<img src="images/widgets/service1.svg">
+					</div>
+				</div>
+				<div class="service__title">Graphik design</div>
+				<div class="service__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</div>
+			</div>
+			<div class="service__item">
+				<div class="service__assorti">
+					<div class="service__number">2</div>
+					<div class="service__img">
+						<img src="images/widgets/service2.svg">
+					</div>
+				</div>
+				<div class="service__title">Graphik design</div>
+				<div class="service__text">Lorem ipsum dolor sit amet, consectetur adipiscing</div>
+			</div>
+			<div class="service__item">
+				<div class="service__assorti">
+					<div class="service__number">3</div>
+					<div class="service__img">
+						<img src="images/widgets/service3.svg">
+					</div>
+				</div>
+				<div class="service__title">Graphik design</div>
+				<div class="service__text">Lorem ipsum dolor sit amet, consectetur adipiscing</div>
+			</div>
+		</div>	
+	</section>
+	
+	<section class="portfolio" id="portfolio">
+
+		<div class="page-title">
+			<div class="page-title__picture">
+				<img src="images/widgets/logo.svg">
+			</div>
+			<div class="page-title__text">
+				<div class="page-title__text_title">We make this</div>
+				<div class="page-title__text_subtitle">Prepare to be amazed</div>
+			</div>
+			<div class="page-title__line"></div>
+		</div>
+
+		<div class="nav">
+			<div class="nav__link link_props-portf">All</div>
+			<div class="nav__link link_props-portf">Design</div>
+			<div class="nav__link link_props-portf">Code</div>
+			<div class="nav__link link_props-portf">Photography</div>
+			<div class="nav__link link_props-portf">Apps</div>
+		</div>
+
+		<div class="portfolio__link">
+			<div class="portfolio__link_title">Awesome Work</div>
+			<div class="portfolio__link_sub_title">/Design</div>
+		</div>
+
+		<div class="portfolio__link">
+			<div class="portfolio__link_title"></div>
+			<div class="portfolio__link_sub_title"></div>
+		</div>
+
+		<div class="portfolio__link">
+			<div class="portfolio__link_title"></div>
+			<div class="portfolio__link_sub_title"></div>
+		</div>
+
+		<div class="portfolio__link">
+			<div class="portfolio__link_title">Awesome Work</div>
+			<div class="portfolio__link_sub_title">/Design</div>
+		</div>
+
+		<div class="portfolio__link">
+			<div class="portfolio__link_title">Awesome Work</div>
+			<div class="portfolio__link_sub_title">/Design</div>
+		</div>
+
+		<div class="portfolio__link">
+			<div class="portfolio__link_title"></div>
+			<div class="portfolio__link_sub_title"></div>
+		</div>
+
+		<div class="portfolio__link">
+			<div class="portfolio__link_title"></div>
+			<div class="portfolio__link_sub_title"></div>
+		</div>
+
+		<div class="portfolio__link">
+			<div class="portfolio__link_title"></div>
+			<div class="portfolio__link_sub_title"></div>
+		</div>	
+	</section>
+
+	<section class="contact" id="contact">
+		<div class="page-title">
+			<div class="page-title__picture">
+				<img src="images/widgets/logo-blue.svg">
+			</div>
+			<div class="page-title__text">
+				<div class="page-title__text_title">Meet the team</div>
+				<div class="page-title__text_subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </div>
+			</div>
+			<div class="page-title__line"></div>
+		</div>
+		<div class="contact__grid">
+			<div class="contact__item">
+				<div class="contact__foto"><img src="images/widgets/master-yoda.jpg"></div>
+				<div class="contact__info">
+					<div class="contact__name">Yoda</div>
+					<div class="contact__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed </div>
+				</div>
+			</div>
+			<div class="contact__item">
+				<div class="contact__foto"><img src="images/widgets/princess-leia.jpg"></div>
+				<div class="contact__info">
+					<div class="contact__name">Princess Leia</div>
+					<div class="contact__text">Lorem ipsum dolor sit amet, consectetur</div>
+				</div>
+			</div>	
+			<div class="contact__item">
+				<div class="contact__foto"><img src="images/widgets/chooyi.jpg"></div>
+				<div class="contact__info">
+					<div class="contact__name">Chewbacca</div>
+					<div class="contact__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do </div>
+				</div>
+			</div>
+			<div class="contact__item">
+				<div class="contact__foto"><img src="images/widgets/luke-skywalker.jpg"></div>
+				<div class="contact__info">
+					<div class="contact__name">Luke-Skywalker</div>
+					<div class="contact__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do </div>
+				</div>
+			</div>
+		</div>		
+	</section>
+	
+	<section class="join" id="join">
+		<div class="join__opt">
+			<div class="opt__ell"><img src="images/widgets/service1.svg"></div>
+			<div class="opt__ell"><img src="images/widgets/service2.svg"></div>
+			<div class="opt__ell"><img src="images/widgets/service3.svg"></div>
+			<div class="opt__ell"><img src="images/widgets/service1.svg"></div>
+			<div class="opt__ell"><img src="images/widgets/service2.svg"></div>
+			<div class="opt__ell"><img src="images/widgets/service3.svg"></div></div>
+	</section>
+	<section class="main main_join">
+		<div class="bg-opacity"></div>
+		<div class="main__text main__text_title">Join the army</div>
+		<div class="main__text main__text_subtitle">become a hero</div>
+		<div class="center">
+			<div class="header__enroll">
+				<button class="btn btn_enroll">More stories</button>
+			</div>
+	</section>
+
+	<section class="blog" id="blog">
+		<div class="page-title">
+			<div class="page-title__picture">
+				<img src="images/widgets/logo-blue.svg">
+			</div>
+			<div class="page-title__text">
+				<div class="page-title__text_title">Read our blog</div>
+				<div class="page-title__text_subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
+			</div>
+			<div class="page-title__line"></div>
+		</div>
+		</div>		
+		<div class="service__grid service__grid_blog">
+			<div class="service__item">
+				<div class="blog-bg_opacity"></div>
+				<div class="blog__img"></div>
+				<div class="blog__date">january 17, 2017</div>
+				<div class="blog__title">Lorem ipsum dolor</div>		
+			</div>
+			<div class="service__item">
+				<div class="blog-bg_opacity"></div>
+				<div class="blog__img blog__img_2"></div>
+				<div class="blog__date">january 17, 2017</div>
+				<div class="blog__title">Lorem ipsum dolor</div>		
+			</div>
+			<div class="service__item">
+				<div class="blog-bg_opacity"></div>
+				<div class="blog__img blog__img_3"></div>
+				<div class="blog__date">january 17, 2017</div>
+				<div class="blog__title">Lorem ipsum dolor</div>		
+			</div>
+		</div>
+		<div class="center">
+			<div class="header__enroll">
+				<button class="btn btn_enroll">More stories</button>
+			</div>
+		</div>	
+	</section>
+	<section class="subscribe" id="subscribe">
+		<div class="subscribe__text">Subscribe to our news</div>
+		<div class="subscribe__input">
+			<input class="input input_subscribe"type="text">
+		</div>
+		<div class="subscribe__btn">
+			<button class="btn btn_subscribe">Subscribe</button>
+		</div>
+	</section>
+	<section class="main main_footer" id="footer">
+		<div class="bg-opacity"></div>
+		<div class="footer">
+			<div class="footer__contact">
+				<div class="page-title__picture">
+					<img src="images/widgets/logo-blue.svg">
+				</div>
+				<div>Lorem ipsum dolor sit amet, consectetur adipiscing</div>
+				<div class="footer__dev">
+					<div>Created by <span><font color=#FFD800>Marina Iovbak</font></span></div>
+					<div><span><font color=#47c7dc>2017 </font>Kazahstan, Almaty </div>
+				</div>
+			</div>
+			<div class="footer__links">
+				<div><span style="font-size: 17px;">Links</span></div>
+				<div>Home</div>
+				<div>Our Services</div>
+				<div>Portfolio</div>
+				<div>Testimonials</div>
+				<div>Support</div>
+				<div>Terms and Conditions</div>
+			</div>
+			<div class="footer__links">
+				<div><span style="font-size: 17px;">About Us</span></div>
+				<div>Sign In</div>
+				<div>Register</div>
+				<div>About Us</div>
+				<div>Blog</div>
+				<div>Contact Us</div>
+			</div>
+			<div class="footer__contact">
+				<div>Contact Us</div>
+				<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
+				<button class="btn btn_footer">marina.iovbak@gmail.com</button>
+			</div>	
+		</div>
+	</section>
+
+</body>
+<script type="text/javascript" src="js/aside.js"></script>
+<script type="text/javascript" src="js/modal.js"></script>
+<script type="text/javascript" src="js/slider.js"></script>
+<script type="text/javascript" src="js/scroll.js"></script>
+
+<!-- 404 esli net faila -->
+
+</html>

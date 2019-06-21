@@ -1,0 +1,37 @@
+.portfolio {
+	width: 100%;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	background:#ddf0f3;
+	padding: 50px 5%;
+
+}
+
+	.portfolio__link {
+		width: 270px;
+		margin-top: 10px;
+		margin-bottom: 10px;	
+		padding: 45px;
+		text-align: center;
+		background: #83e6e2;
+		color: #fff;
+	}
+
+	.portfolio__link_title {
+		font-size: 25px;
+		margin-bottom: 10px;
+	}
+
+	.portfolio__link_subtitle {
+		font-size: 15px;
+
+	}
+	
+@media screen and (max-width: 767px) {
+	.portfolio {
+		justify-content: center;
+		padding: 50px 0%;
+	}
+
+}

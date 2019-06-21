@@ -1,0 +1,37 @@
+.footer {
+	width: 100%;
+	padding: 50px 5%;
+	position: relative;
+	z-index: 2;
+	color: #fff;
+	font-size: 16px;
+	line-height: 2.5;
+	display: flex;
+	flex-flow: row wrap;
+}
+
+	.footer__contact {
+		width: 30%;
+		padding-right: 50px;
+	}
+
+	.footer__links {
+		width: 20%;
+	}
+
+	.footer__dev {
+		padding-top: 40px;
+	}
+
+@media screen and (max-width: 767px) {
+	.footer {
+		background-color: rgb(25, 40, 63);
+		padding:0, 5px;
+	}
+	.footer__contact {
+		width: 100%;
+	}
+	.footer__links {
+		width: 100%;
+	}
+}

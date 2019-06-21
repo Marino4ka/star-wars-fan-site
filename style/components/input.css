@@ -1,0 +1,17 @@
+.input {
+	width: 100%;
+	border: none;
+	background-color: transparent;
+	outline: none;
+	
+}
+
+.input_subscribe {
+	border-bottom: 1px solid #fff;
+	color: #fff;
+	padding: 0 10px 10px;
+}
+
+.input_field {
+	padding: 10px 15px;
+}

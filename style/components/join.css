@@ -1,0 +1,33 @@
+.join {
+	width: 100%;
+	padding: 0 5%;
+	background: #ddf0f3;
+}
+
+	.join__opt {
+		width: 100%;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-around;
+		/*padding-left: 5%;*/
+		/*padding-right: 5%;*/
+	}
+
+		.opt__ell {
+			width: 10vh;
+			height: 10vh;
+			margin-top: 20px;
+			margin-bottom: 20px;
+
+		}
+
+		.opt__ell img {
+			width: 100%;
+		}
+
+@media screen and (max-width: 449px) {
+	.opt__ell {
+		width: calc(100% / 6);
+		padding: 5px;
+	}
+}

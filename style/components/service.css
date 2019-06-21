@@ -1,0 +1,65 @@
+.service {
+	width: 100%;
+	padding: 50px 5%;
+
+}
+	.service__grid {
+		width: 100%;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: center;
+		padding-top: 30px;
+		padding-bottom: 25px;
+	}
+
+	.service__grid_blog {
+		justify-content: space-around;
+	}
+
+	.service__item {
+		width: 300px;
+		/*dlya mobile*/	
+		position: relative;
+	}
+		.service__assorti {
+			width: 100%;
+			position: relative;
+		}
+
+		.service__img {
+			width: 80px;
+			position: absolute;
+			bottom: 0;
+			left: calc(50% - 40px);
+		}
+			.service__img img {
+				width: 100%;
+			}
+
+			.service__number {
+				font-size:160px;
+				text-align: center;
+				font-weight: bolder;
+				color: #808080;
+			}
+
+
+		.service__title {
+			width: 100%;
+			text-transform: uppercase;
+			font-weight: 700;
+			font-size: 17px;
+			color: rgb(255, 197, 1);
+			text-align: center;
+			margin: 10px 0 15px; 
+		}
+
+		.service__text {
+			width: 100%;
+			font-size: 15px;
+			line-height: 1.5;
+			color: #ddd;
+			text-align: center;
+			/*margin-bottom: 20px;*/
+		}
+

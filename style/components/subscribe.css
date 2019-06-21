@@ -1,0 +1,41 @@
+.subscribe {
+	width: 100%;
+	background: rgb(255, 196, 0);
+	padding: 15px 0;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+	.subscribe__text {
+		padding: 0 5px;
+	}
+
+	.subscribe__input {
+		padding: 0 5px;
+		width: 300px;
+	}
+
+	.subscribe__btn {
+		padding: 0 5px;
+		width: 120px;
+	}
+
+@media screen and (max-width: 767px) {
+	.subscribe__input,
+	.subscribe__btn {
+		display: none;
+	}
+
+	.subscribe {
+		background-color: transparent;
+	}
+
+	.subscribe__text {
+		background: rgb(75, 220, 103);
+		padding: 15px 20px;
+		border-radius: 15px;
+		color: #fff;
+	}
+}

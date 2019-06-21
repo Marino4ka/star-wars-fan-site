@@ -1,0 +1,57 @@
+.slider {
+	width: 300%;
+	height: 100vh;
+	display: flex;
+	flex-flow: row wrap;
+	position: absolute;
+	top:0;
+	left: 0;
+	transition: 0.3s ease-in-out;
+}
+
+.slider-arrow {
+	width: 50px;
+	position: absolute;
+	top: calc(50% - 25px);
+	z-index: 20;
+	cursor: pointer;
+}
+
+	.slider-arrow img {
+		width: 100%;
+	}
+
+.slider-arrow_left {
+	left: 25px;
+}
+
+.slider-arrow_right {
+	right: 25px;
+	transform: rotate(180deg);
+}
+
+
+	.slider__slide {
+		width: calc(100% / 3);
+		/*100% otnositelno displeya*/
+		background-image: url('../../images/bg/background.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-attachment: fixed;
+		/*zafixirovat' background pri scrole contenta*/
+		display:flex;
+		justify-content: center;
+		align-items: center;
+		flex-flow: column wrap;
+		position: relative; 
+		/*z-index: 20;*/
+		/*vnutrenniye bloki ne vihodyat za main, esli est absolutnyi*/
+	}	
+
+		.slider__slide_2 {
+			background-image: url('../../images/widgets/blog1.jpg');
+		}
+
+		.slider__slide_3 {
+			background-image: url('../../images/widgets/blog2.jpg');
+		}

@@ -1,0 +1,64 @@
+.header {
+	width: 100%;
+	height:70px;
+	background:rgb(25,40,63);
+	display: flex;
+	flex-flow: row wrap;
+	padding: 0 10%;
+	position: fixed;
+	z-index: 100;
+}
+
+	.header__menu {
+		width: 40px;
+		height: 40px;
+		display: none;
+	}
+
+	.header__logo {
+		width: 70px;
+		height: 70px;
+		padding: 10px;
+	}
+
+		.header__logo img {
+			width: 100%;
+
+		}
+
+	.header__enroll {
+		width: 	100px;
+		display: flex;
+		align-items: center;
+	}
+
+	.header__enrol_center  {
+		width: auto;
+		
+
+	}
+
+@media screen and (max-width: 768px) {
+
+
+	.header{
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.header__menu {
+		display: block;
+	}
+
+	.header__logo {
+		display: none;
+	}
+}
+
+
+
+/*tag - 1
+  class - 10
+  id - 100
+  inline - 1000
+  !important - 10000*/

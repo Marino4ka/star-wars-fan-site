@@ -1,0 +1,44 @@
+.page-title {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	flex-flow: column wrap;
+}
+
+
+	.page-title__picture {
+		width: 70px;
+	}
+
+		.page-title__picture img {
+		width: 100%
+		}
+
+	.page-title__text {
+		text-align: center;
+		margin-top: 10px;
+	}
+
+		.page-title__text_title {
+			margin-top: 10px;
+			font-size: 30px;
+
+		}
+
+		.page-title__text_subtitle {
+			margin-top: 10px;
+			font-size: 15px;
+			text-transform: uppercase;
+			color: #847878;
+		}
+
+		.page-title__line {
+		border-bottom: 1px solid #47c7dc;
+		width: 90px;
+		margin-right: auto;
+		margin-left: auto;
+		margin-bottom: 20px;
+		margin-top: 10px;
+		}
+
+
